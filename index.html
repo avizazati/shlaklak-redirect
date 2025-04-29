@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Get ShlakLak Now</title>
   <meta charset="UTF-8" />
-
 
   <!-- Open Graph for Facebook, WhatsApp, etc. -->
   <meta property="og:title" content="Slaklak - Time to Make a Wish!" />
@@ -19,8 +17,12 @@
   <meta name="twitter:title" content="Slaklak - Time to Make a Wish!" />
   <meta name="twitter:description" content="Tap to download the app for your device." />
   <meta name="twitter:image" content="https://avizazati.github.io/shlaklak-redirect/preview.png" />
+  
+  <title>Get ShlakLak Now</title>
 
   <script>
+      setTimeout(() => {
+
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
@@ -36,6 +38,8 @@
       // Fallback for everything else
       window.location.href = "https://www.youtube.com/watch?v=rG0OAI1EDKM&ab_channel=avizazati";
     }
+}, 1000); // 1-second delay
+
   </script>
 </head>
 <body>
