@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      // Android → Google Play
+      window.location.href = "https://play.google.com/store/apps/details?id=com.zaza.someandroidapp";
+    } else if (/iPad|iPhone|iPod|Macintosh/.test(userAgent) && !window.MSStream) {
+      // iOS or macOS → App Store
+      window.location.href = "https://apps.apple.com/app/id6744930587";
+    } else if (/Windows/i.test(userAgent)) {
+      // Windows → Google Play for PC or alternative
+      window.location.href = "https://play.google.com/store/apps/details?id=com.zaza.someandroidapp";
+    } else {
+      // Fallback for everything else
+      window.location.href = "https://www.youtube.com/watch?v=rG0OAI1EDKM&ab_channel=avizazati";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to the appropriate app store...</p>
+</body>
+</html>
